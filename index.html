@@ -46,13 +46,14 @@
 
                     <label for="user-Name" name="user-Name"> <i class="fa-solid fa-address-card mx-2"></i><span
                             class="fw-medium">Site Name</span></label>
-                    <input class="form-control " type="text" id="user-Name" name="user-Name">
+                    <input class="form-control " oninput="alerrt()" autocomplete="off" type="text" id="user-Name"
+                        name="user-Name">
                 </div>
                 <div class=" col-md-12 my-3  d-flex flex-wrap flex-column justify-content-start gap-2">
 
                     <label for="URL-LINK" name="user-Name"> <i class="fa-solid fa-link mx-2"></i><span
                             class="fw-medium">URL</span></label>
-                    <input class="form-control" type="text" id="URL-LINK" name="user-Name">
+                    <input class="form-control" autocomplete="off" type="text" id="URL-LINK" name="user-Name">
                 </div>
                 <div class="col-md-12 my-3 justify-content-center align-items-center d-flex">
                     <button type="button" onclick="addInformation()" class="btn btn-danger px-5">Submit</button>

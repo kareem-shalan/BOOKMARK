@@ -23,7 +23,7 @@ function addInformation() {
     link: url.value,
   };
 
-  if ((userName.value.length < 4)) {
+  if (userName.value.length < 4) {
     alert("Please fill in both the user name and URL.");
     userName.classList.remove("is-valid");
     userName.classList.add("is-invalid");
@@ -35,7 +35,7 @@ function addInformation() {
   }
 
   let urlRegex = /^(https?:\/\/)/i;
-  if (!urlRegex.test(url.value) ) {
+  if (!urlRegex.test(url.value)) {
     url.classList.remove("is-valid");
     url.classList.add("is-invalid");
     alert("Please enter a valid URL starting with http:// ");
@@ -81,8 +81,21 @@ function delet(deleted) {
   dispaly();
 }
 function visitUrl(viseted) {
- 
   let url = allData[viseted].link;
   window.open(url, "_blank");
   dispaly();
+}
+
+function alerrt() {
+
+  userName.onfocus = () => { } 
+
+  if (userName.value.length < 4  ) {
+    userName.classList.add("is-invalid");
+  } else {
+    userName.classList.remove("is-invalid");
+    userName.classList.add("is-valid");
+    
+  }
+ 
 }
